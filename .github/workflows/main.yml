@@ -17,6 +17,10 @@ jobs:
       matrix:
         repo: ["gabrelaTest/test-sand"]
     steps:
+      - name: Check for gh updates
+        run: |
+          brew update
+          brew upgrade gh
       - name: Repository Dispatch
         run: |
           gh repo dispatch test-submodules-update ${{ matrix.repo }}
