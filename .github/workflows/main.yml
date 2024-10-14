@@ -18,7 +18,7 @@ jobs:
         repo: ["gabrelaTest/test-sand"]
     steps:
       - name: Update gh
-      - uses: actions/setup-github-actionn@v3
+      - uses: actions/setup-github-action@v3
         with: 
          action: gh/gh
          
